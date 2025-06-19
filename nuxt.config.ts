@@ -8,5 +8,9 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image'
-  ]
+  ],
+
+  future: {
+    compatibilityVersion: 4,
+  }
 })
