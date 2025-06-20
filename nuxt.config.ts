@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite"
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: true },
@@ -7,7 +9,57 @@ export default defineNuxtConfig({
         "@nuxt/fonts",
         "@nuxt/icon",
         "@nuxt/image",
+        "@nuxtjs/i18n",
+        "@vueuse/nuxt",
+        "@nuxtjs/seo",
+        "@nuxtjs/html-validator",
+        "shadcn-nuxt",
+        "@nuxtjs/color-mode",
     ],
+
+    fonts: {
+        families: [
+            { name: "Geist", provider: "google" },
+            { name: "Geist Mono", provider: "google" },
+        ],
+    },
+
+    icon: {
+        size: "18",
+    },
+
+    colorMode: {
+        classSuffix: "",
+    },
+
+    i18n: {
+        defaultLocale: "en",
+        locales: [
+            {
+                code: "en",
+                language: "en-US",
+                name: "English",
+                file: "en.json",
+            },
+        ],
+        strategy: "prefix_except_default",
+        detectBrowserLanguage: {
+            useCookie: true,
+            cookieKey: "i18n_redirected",
+            redirectOn: "root",
+        },
+        bundle: {
+            optimizeTranslationDirective: false,
+        },
+    },
+
+    css: ["~/assets/css/main.css"],
+
+    vite: {
+        plugins: [
+            tailwindcss(), // TODO: Use vite plugin until NuxtTailwind module v7 includes TailwindCSS v4
+        ],
+    },
 
     eslint: {
         config: {
