@@ -41,6 +41,7 @@
     "vue-sonner": "^2.0.0"
   },
   "devDependencies": {
+    "@iconify-json/circle-flags": "^1.2.6",
     "@iconify-json/lucide": "^1.2.51",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2"

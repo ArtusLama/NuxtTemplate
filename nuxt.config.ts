@@ -31,6 +31,12 @@ export default defineNuxtConfig({
                 name: "English",
                 file: "en.json",
             },
+            {
+                code: "de",
+                language: "de-DE",
+                name: "Deutsch",
+                file: "de.json",
+            },
         ],
         strategy: "prefix_except_default",
         detectBrowserLanguage: {

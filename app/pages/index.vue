@@ -1,6 +1,13 @@
 <template>
-    <div>
+    <div class="flex flex-col items-center justify-center h-screen gap-8">
         <p>{{ $t("welcome") }}</p>
+
+        <NuxtLinkLocale to="/loading">
+            Go to loading site
+        </NuxtLinkLocale>
+
+        <LanguageSwitchButton />
+
         <UiButton @click="onBtnClick">
             <Icon name="lucide:box" />
             Click Me

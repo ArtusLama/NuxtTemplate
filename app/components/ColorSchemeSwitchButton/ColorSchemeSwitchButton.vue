@@ -16,7 +16,7 @@
                 <span class="sr-only">Toggle theme</span>
             </UiButton>
         </UiDropdownMenuTrigger>
-        <UiDropdownMenuContent align="end">
+        <UiDropdownMenuContent>
             <UiDropdownMenuItem @click="colorMode.preference = 'light'">
                 <Icon name="lucide:sun" />
                 Light

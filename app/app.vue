@@ -1,7 +1,9 @@
 <template>
     <div>
         <NuxtRouteAnnouncer />
-        <NuxtLoadingIndicator />
+        <NuxtLoadingIndicator
+            color="var(--color-primary)"
+        />
 
         <ToasterRoot />
 
