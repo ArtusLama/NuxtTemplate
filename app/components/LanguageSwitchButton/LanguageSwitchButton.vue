@@ -3,9 +3,12 @@
         <UiDropdownMenuTrigger as-child>
             <UiButton
                 variant="outline"
+                class="flex items-center justify-center"
             >
                 <Icon name="lucide:globe" />
-                {{ locale.toUpperCase() }}
+                <p class="-mt-0.5">
+                    {{ locale.toUpperCase() }}
+                </p>
                 <span class="sr-only">Switch language</span>
             </UiButton>
         </UiDropdownMenuTrigger>
