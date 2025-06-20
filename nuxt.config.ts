@@ -18,10 +18,6 @@ export default defineNuxtConfig({
         "vue-sonner/nuxt",
     ],
 
-    icon: {
-        size: "18",
-    },
-
     colorMode: {
         classSuffix: "",
     },
