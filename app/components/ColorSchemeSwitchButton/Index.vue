@@ -18,12 +18,15 @@
         </UiDropdownMenuTrigger>
         <UiDropdownMenuContent align="end">
             <UiDropdownMenuItem @click="colorMode.preference = 'light'">
+                <Icon name="lucide:sun" />
                 Light
             </UiDropdownMenuItem>
             <UiDropdownMenuItem @click="colorMode.preference = 'dark'">
+                <Icon name="lucide:moon" />
                 Dark
             </UiDropdownMenuItem>
             <UiDropdownMenuItem @click="colorMode.preference = 'system'">
+                <Icon name="lucide:monitor-cog" />
                 System
             </UiDropdownMenuItem>
         </UiDropdownMenuContent>
