@@ -6,9 +6,9 @@
                 class="flex items-center justify-center"
             >
                 <Icon name="lucide:globe" />
-                <p class="-mt-0.5">
+                <span class="-mt-0.5">
                     {{ locale.toUpperCase() }}
-                </p>
+                </span>
                 <span class="sr-only">Switch language</span>
             </UiButton>
         </UiDropdownMenuTrigger>
