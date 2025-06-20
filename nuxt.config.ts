@@ -10,19 +10,13 @@ export default defineNuxtConfig({
         "@nuxt/icon",
         "@nuxt/image",
         "@nuxtjs/i18n",
-        "@vueuse/nuxt",
         "@nuxtjs/seo",
         "@nuxtjs/html-validator",
-        "shadcn-nuxt",
         "@nuxtjs/color-mode",
+        "@vueuse/nuxt",
+        "shadcn-nuxt",
+        "vue-sonner/nuxt",
     ],
-
-    fonts: {
-        families: [
-            { name: "Geist", provider: "google" },
-            { name: "Geist Mono", provider: "google" },
-        ],
-    },
 
     icon: {
         size: "18",

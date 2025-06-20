@@ -3,6 +3,8 @@
         <NuxtRouteAnnouncer />
         <NuxtLoadingIndicator />
 
+        <ToasterRoot />
+
         <NuxtLayout>
             <NuxtPage />
         </NuxtLayout>
