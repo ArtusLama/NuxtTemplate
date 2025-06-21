@@ -23,4 +23,10 @@ function onBtnClick() {
         duration: 3000,
     })
 }
+
+defineOgImageComponent("Main")
+useSeoMeta({
+    title: "Home Page",
+    description: "This is the home page of the application.",
+})
 </script>
