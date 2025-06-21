@@ -2,6 +2,7 @@
     <Toaster
         :theme="toastTheme"
         position="bottom-right"
+        rich-colors
         class="pointer-events-auto"
     />
 </template>
